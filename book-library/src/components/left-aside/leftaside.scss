@@ -1,0 +1,22 @@
+.left-aside{
+    padding: 25px;
+    background-color: #ccc;
+    width: 30%;
+    height: 80vh;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    &__name{
+        font-size: 20px;
+        color: blue;
+        font-weight: 500;
+    }
+    &__list{
+        list-style: none;
+        padding: 0px;
+        color: yellow;
+        li{
+            display: flex;
+            align-items: center;
+        }
+    }
+}
