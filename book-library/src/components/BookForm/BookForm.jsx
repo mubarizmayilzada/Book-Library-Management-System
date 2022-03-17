@@ -35,33 +35,36 @@ const BookForm = () => {
   };
 
   return (
-    <main>
+    <section className="create-book-section">
       <div className="book__form">
+        <h2>
+          Create book
+        </h2>
         <form action="">
           <div className="form-control-c">
-            <label className="col-3" htmlFor="">
-              Name
+            <label htmlFor="name-input">
+              Name:
             </label>
-            <input value={name} onChange={hanleNameInput} className="col-7" type="text" />
+            <input id="name-input" value={name} onChange={hanleNameInput} className="col-7" type="text" />
           </div>
           <div className="form-control-c">
-            <label className="col-3" htmlFor="">
-              Author
+            <label htmlFor="author-input">
+              Author:
             </label>
-            <input value={author} onChange={hanleAuthorInput} className="col-7" type="text" />
+            <input id="author-input" value={author} onChange={hanleAuthorInput} className="col-7" type="text" />
           </div>
           <div className="form-control-c">
-            <label className="col-3" htmlFor="">
-              Price
+            <label htmlFor="price-input">
+              Price:
             </label>
-            <input value={price} onChange={hanlePriceInput} className="col-7" type="number" />
+            <input id="price-input" value={price} onChange={hanlePriceInput} className="col-7" type="number" />
           </div>
           <button onClick={onSumbit} type="submit" className="btn btn-success">
             Create
           </button>
         </form>
       </div>
-    </main>
+    </section>
   );
 };
 

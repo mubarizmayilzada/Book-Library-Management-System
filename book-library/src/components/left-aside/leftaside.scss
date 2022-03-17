@@ -1,22 +1,53 @@
 .left-aside{
-    padding: 25px;
-    background-color: #ccc;
-    width: 30%;
-    height: 80vh;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+    padding: 25px 0;
+    background-color: #00195f;
+    width: 17%;
+    height: 100vh;
     &__name{
+        padding-left: 30px;
         font-size: 20px;
-        color: blue;
+        color: blueviolet;
         font-weight: 500;
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+        span{
+            color: white;
+            margin-left: 5px;
+        }
     }
     &__list{
         list-style: none;
         padding: 0px;
         color: yellow;
-        li{
+        a{
+            text-decoration: none;
             display: flex;
             align-items: center;
+        }
+        li{
+            text-decoration: none;
+            font-size: 17px;
+            padding: 10px;
+            padding-left: 25px;
+            transition: background-color .2s ease-in-out;
+            &:hover{
+                background-color: #fff;
+                border-left: 3px solid blueviolet;
+                svg{
+                    fill: black;
+                    color: black;
+                }
+                span{
+                    color: black;
+                }
+            }
+            display: flex;
+            align-items: center;
+            span{
+                margin-left: 15px;
+                color: #ccc;
+            }
         }
     }
 }

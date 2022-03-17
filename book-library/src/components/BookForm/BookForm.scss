@@ -1,29 +1,81 @@
-main {
-  width: 65%;
-  height: 80vh;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 50px;
-  padding: 20px;
+.create-book-section {
+  background-color: rgb(241, 245, 249);
 
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  .book__form {
-    width: 50%;
-    padding: 10px;
-    background-color: rgb(197, 194, 194);
-    .form-control-c {
-      margin-top: 15px;
-      padding: 2px;
-      input {
-        outline: none;
-        border: 1px solid gray;
-        font-size: 17px;
-        padding: 5px;
+  width: 85%;
+  height: 100vh;
+  .book__form{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    h2{
+      padding: 15px;
+      color: blueviolet;
+    }
+    form{
+      .form-control-c{
+        padding: 10px;
       }
+      label{
+        display: block;
+        font-size: 17px;
+        color: black;
+        font-weight: 600;
+        margin-bottom: 3px;
+      }
+      input{
+        width: 100%;
+        outline: none;
+        border: 1px solid #ccc;
+        padding: 7px 15px;
+        border-radius: 3px;
+        color: blueviolet;
+      }
+      button{
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 25px;
+        width: 100%;
+        padding: 10px;
+        background-color: blueviolet;
+        color: white;
+        border: none;
+        outline: none;
+      }
+      padding: 50px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 50%;
+      height: 60%;
+      background-color: white;
     }
   }
+  // width: 80%;
+  // height: 80vh;
+  // position: absolute;
+  // top: 0;
+  // right: 0;
+  // margin-top: 50px;
+  // padding: 20px;
+  // ul {
+  //   list-style-type: none;
+  //   padding: 0;
+  // }
+  // .book__form {
+  //   width: 100%;
+  //   background-color: red;
+  //   padding: 10px;
+  //   background-color: rgb(197, 194, 194);
+  //   .form-control-c {
+  //     margin-top: 15px;
+  //     padding: 2px;
+  //     input {
+  //       outline: none;
+  //       border: 1px solid gray;
+  //       font-size: 17px;
+  //       padding: 5px;
+  //     }
+  //   }
+  // }
 }

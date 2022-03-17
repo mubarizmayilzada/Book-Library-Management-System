@@ -31,8 +31,9 @@ const reducer = (state = inititalState, action) => {
     case "EDIT":
       let foundBook = state.todos.filter((x) => x.id === action.value.id);
       console.log(state.todos);
+      console.log(foundBook);
       var itemIndex = state.todos.findIndex((i) => i.id === action.value.id);
-
+      console.log(action.value);
       let updatedTodo = {
         name:
           action.value.book.name.length > 0
@@ -45,7 +46,7 @@ const reducer = (state = inititalState, action) => {
         price:
           action.value.book.price.length > 0
             ? action.value.book.price
-            : foundBook[0].price,
+            : foundBook[0].price, 
       };
       let updatedTodos = [...state.todos];
       updatedTodos[itemIndex] = updatedTodo;

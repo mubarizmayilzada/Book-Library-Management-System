@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
   return (
-    <>
+    <div className="app-div">
       <LeftAside />
       <Routes>
         <Route path="/booklist" element={<MainContent />} />
@@ -15,7 +15,7 @@ function App() {
       <Routes>
         <Route exact path="/create" element={<BookForm />} />
       </Routes>
-    </>
+    </div>
   );
 }
 export default App;
