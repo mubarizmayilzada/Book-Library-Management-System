@@ -9,10 +9,7 @@ const LeftAside = () => {
   return (
     <aside className="left-aside">
       <h2 className="left-aside__name">
-        <RiCheckboxBlankLine color="white"/> 
-        <span>
-          AZİNTELECOM
-        </span>
+       <img src="https://azintelecom.az/template/assets/images/logo.svg" alt="" />
       </h2>
       <ul className="left-aside__list">
         <li>

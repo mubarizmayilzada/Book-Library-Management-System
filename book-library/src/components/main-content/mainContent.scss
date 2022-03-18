@@ -2,26 +2,6 @@ main{
     width: 85%;
     height: 100vh;
     padding: 20px;
-//     ul {
-//         list-style-type: none;
-//         padding: 0;
-//       }
-//       .book__form {
-//         width: 100%;
-//         background-color: red;
-//         padding: 10px;
-//         background-color: rgb(197, 194, 194);
-//         .form-control-c {
-//           margin-top: 15px;
-//           padding: 2px;
-//           input {
-//             outline: none;
-//             border: 1px solid gray;
-//             font-size: 17px;
-//             padding: 5px;
-//           }
-//         }
-//       }
 }
 
 
@@ -41,12 +21,11 @@ main{
         align-items: center;
 
         &__right-side{
-            width: 134px;
-            display: flex;
-            justify-content: space-between;
+            cursor: pointer;
             font-size: 14px;
             font-weight: 400;
             color: rgb(104, 104, 104);
+            line-height: 100%;
             svg{
                 width: 15px;
                 color: #d3d3d3;

@@ -32,7 +32,22 @@ const BookForm = () => {
       setName('')
       setAuthor('')
       setPrice('')
+      onSubmitToastr();
   };
+  const onSubmitToastr = () => {
+    const toastr = document.getElementById('toastr');
+    toastr.classList.remove('none-booklist');
+    toastr.classList.add('success-booklist');
+
+    setTimeout(() => {
+      // toastr.style = 'opacity: 0';
+      toastr.classList.remove('success-booklist');
+      toastr.classList.add('none-booklist');
+    }, 3000);
+  };
+
+
+
 
   return (
     <section className="create-book-section">
@@ -62,6 +77,9 @@ const BookForm = () => {
           <button onClick={onSumbit} type="submit" className="btn btn-success">
             Create
           </button>
+        <h3 id="toastr" className="none-booklist">
+          Book list created
+        </h3>
         </form>
       </div>
     </section>

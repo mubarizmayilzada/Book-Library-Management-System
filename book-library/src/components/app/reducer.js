@@ -4,13 +4,31 @@ const inititalState = {
       id: Math.ceil(Math.random() * 100),
       name: "Atomic Habits",
       author: "James Clark",
-      price: "45$",
+      price: "70$",
     },
     {
       id: Math.ceil(Math.random() * 100),
       name: "Rich dad Poor dad",
       author: "Robert Kiyosaki",
       price: "45$",
+    },
+    {
+      id: Math.ceil(Math.random() * 100),
+      name: "Harry Potter",
+      author: "JK Rowling",
+      price: "100$",
+    },
+    {
+      id: Math.ceil(Math.random() * 100),
+      name: "Tabacco Wives",
+      author: "Adele Myers",
+      price: "25$",
+    },
+    {
+      id: Math.ceil(Math.random() * 100),
+      name: "Night House",
+      author: "Leigh Bardugo",
+      price: "13$",
     },
   ],
 };
@@ -30,10 +48,7 @@ const reducer = (state = inititalState, action) => {
       };
     case "EDIT":
       let foundBook = state.todos.filter((x) => x.id === action.value.id);
-      console.log(state.todos);
-      console.log(foundBook);
       var itemIndex = state.todos.findIndex((i) => i.id === action.value.id);
-      console.log(action.value);
       let updatedTodo = {
         name:
           action.value.book.name.length > 0

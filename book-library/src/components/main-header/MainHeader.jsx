@@ -4,8 +4,7 @@ import marz from '../../assets/images/marz.jpg';
 import './mainHeader.scss'
 import {useState} from 'react' 
 
-const MainHeader = () => {
-  const [searchTerm, setSearchTerm] = useState("");
+const MainHeader = (props) => {
   
   return (
     <header>
@@ -15,7 +14,7 @@ const MainHeader = () => {
             </h2>
         </div>
         <div className='right-aside-header'> 
-            <input onChange={(event) => {setSearchTerm(event.target.value)}} type="text" placeholder='search for book name'/>
+            <input onChange={(event) => {props.search(event.target.value)}} type="text" placeholder='search for book name'/>
             <BsBell/>
             <span></span>
             <h3>Mubariz Mayilzada</h3>

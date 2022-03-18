@@ -79,3 +79,19 @@
   //   }
   // }
 }
+
+
+.none-booklist{
+  display: none;
+}
+.success-booklist{
+  display: block;
+}
+
+#toastr{
+  text-align: center;
+  color: green;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 20px;
+}
